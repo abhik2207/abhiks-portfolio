@@ -1,0 +1,80 @@
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../src/assets/wallpaper.webp');
+  /* background-image: url('https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+#drawer {
+  height: 100%;
+  width: 20%;
+  padding: 0.6vmax;
+  padding-right: 0.3vmax;
+}
+
+#drawer-main {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5vmax;
+  backdrop-filter: blur(10px);
+  background-color: #ffffff1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drawer-main > p {
+  color: #fff;
+}
+
+#content {
+  height: 100%;
+  width: 80%;
+  padding: 0.6vmax;
+  padding-left: 0.3vmax;
+}
+
+#content-main {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5vmax;
+  backdrop-filter: blur(10px);
+  background-color: #ffffff1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-main > p {
+  color: #fff;
+}
+
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  #drawer {
+    width: 35%;
+    padding: 0.9vmax;
+    padding-right: 0.45vmax;
+  }
+  
+  #content {
+    width: 65%;
+    padding: 0.9vmax;
+    padding-left: 0.45vmax;
+  }
+}
+
+@media (max-width: 550px) {
+  #content {
+    background-color: blue;
+  }
+}
